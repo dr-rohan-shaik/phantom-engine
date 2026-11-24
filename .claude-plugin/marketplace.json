@@ -29,8 +29,7 @@
         "deploy"
       ],
       "hooks": [
-        "stop-guard",
-        "session-guard"
+        "./hooks/hooks.json"
       ],
       "agents": [
         "architect",
