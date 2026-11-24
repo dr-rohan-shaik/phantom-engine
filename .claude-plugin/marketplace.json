@@ -28,9 +28,6 @@
         "report",
         "deploy"
       ],
-      "hooks": [
-        "./hooks/hooks.json"
-      ],
       "agents": [
         "architect",
         "investigator",
