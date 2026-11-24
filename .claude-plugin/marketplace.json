@@ -16,33 +16,34 @@
       "repository": "https://github.com/dr-rohan-shaik/phantom-engine",
       "entryPoint": "scripts/main.py",
       "commands": [
-        "start",
-        "scan",
-        "fix",
-        "audit",
-        "test",
-        "loop",
-        "status",
-        "stop",
-        "resume",
-        "report",
-        "deploy"
+        "./commands/start.md",
+        "./commands/scan.md",
+        "./commands/fix.md",
+        "./commands/audit.md",
+        "./commands/test.md",
+        "./commands/loop.md",
+        "./commands/status.md",
+        "./commands/stop.md",
+        "./commands/resume.md",
+        "./commands/report.md",
+        "./commands/deploy.md"
       ],
+      "hooks": "./hooks/hooks.json",
       "agents": [
-        "architect",
-        "investigator",
-        "repair-engineer",
-        "qa-engineer",
-        "security-auditor",
-        "final-reviewer"
+        "./agents/architect.md",
+        "./agents/investigator.md",
+        "./agents/repair-engineer.md",
+        "./agents/qa-engineer.md",
+        "./agents/security-auditor.md",
+        "./agents/final-reviewer.md"
       ],
       "skills": [
-        "repository-intelligence",
-        "autonomous-debugging",
-        "code-repair",
-        "regression-testing",
-        "security-auditing",
-        "deployment-verification"
+        "./skills/repository-intelligence",
+        "./skills/autonomous-debugging",
+        "./skills/code-repair",
+        "./skills/regression-testing",
+        "./skills/security-auditing",
+        "./skills/deployment-verification"
       ],
       "permissions": {
         "modes": ["SAFE", "AUTO", "SANDBOX"],
