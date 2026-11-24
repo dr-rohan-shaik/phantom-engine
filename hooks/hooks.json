@@ -1,0 +1,28 @@
+{
+  "hooks": [
+    {
+      "id": "phantom-stop-guard",
+      "type": "Stop",
+      "command": "python scripts/hooks/stop-guard.py",
+      "description": "Prevents Claude from stopping while Phantom Engine loop is active"
+    },
+    {
+      "id": "phantom-session-guard",
+      "type": "SessionStart",
+      "command": "python scripts/hooks/session-guard.py",
+      "description": "Restores Phantom Engine state on session start"
+    },
+    {
+      "id": "phantom-pre-tool",
+      "type": "PreToolUse",
+      "command": "python scripts/hooks/pre-tool.py",
+      "description": "Validates tool use against permission policy"
+    },
+    {
+      "id": "phantom-post-tool",
+      "type": "PostToolUse",
+      "command": "python scripts/hooks/post-tool.py",
+      "description": "Logs tool execution and updates state"
+    }
+  ]
+}

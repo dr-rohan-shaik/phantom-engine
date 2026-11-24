@@ -1,0 +1,64 @@
+{
+  "name": "phantom-engine",
+  "version": "1.0.0",
+  "description": "Autonomous Software Engineering Plugin for Claude Code - GHOST ENGINEER + PERFECT LOOP",
+  "author": "Phantom Engine Team",
+  "license": "MIT",
+  "repository": "https://github.com/phantom-engine/phantom-engine",
+  "entryPoint": "scripts/main.py",
+  "commands": [
+    "start",
+    "scan",
+    "fix",
+    "audit",
+    "test",
+    "loop",
+    "status",
+    "stop",
+    "resume",
+    "report",
+    "deploy"
+  ],
+  "hooks": [
+    "stop-guard",
+    "session-guard"
+  ],
+  "agents": [
+    "architect",
+    "investigator",
+    "repair-engineer",
+    "qa-engineer",
+    "security-auditor",
+    "final-reviewer"
+  ],
+  "skills": [
+    "repository-intelligence",
+    "autonomous-debugging",
+    "code-repair",
+    "regression-testing",
+    "security-auditing",
+    "deployment-verification"
+  ],
+  "permissions": {
+    "modes": ["SAFE", "AUTO", "SANDBOX"],
+    "default": "AUTO"
+  },
+  "configuration": {
+    "maxIterations": 10,
+    "maxRuntimeMinutes": 60,
+    "executionBudget": 1000,
+    "autoGitPush": false,
+    "autoDeploy": false,
+    "deploymentTargets": []
+  },
+  "minClaudeCodeVersion": "1.0.0",
+  "keywords": [
+    "autonomous",
+    "engineering",
+    "debugging",
+    "testing",
+    "security",
+    "deployment",
+    "loop"
+  ]
+}
