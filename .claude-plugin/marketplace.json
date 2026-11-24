@@ -1,72 +1,26 @@
 {
+  "$schema": "https://schemas.claude.ai/marketplace.json",
   "name": "phantom-engine",
+  "description": "Autonomous Software Engineering Plugin for Claude Code - GHOST ENGINEER + PERFECT LOOP",
   "owner": {
     "name": "dr-rohan-shaik",
     "url": "https://github.com/dr-rohan-shaik"
   },
-  "description": "Autonomous Software Engineering Plugin for Claude Code - GHOST ENGINEER + PERFECT LOOP",
-  "homepage": "https://github.com/dr-rohan-shaik/phantom-engine",
-  "repository": "https://github.com/dr-rohan-shaik/phantom-engine",
   "plugins": [
     {
       "name": "phantom-engine",
-      "version": "1.0.0",
       "description": "Autonomous Software Engineering Plugin for Claude Code - GHOST ENGINEER + PERFECT LOOP",
-      "license": "MIT",
-      "repository": "https://github.com/dr-rohan-shaik/phantom-engine",
-      "entryPoint": "scripts/main.py",
-      "commands": [
-        "./commands/start.md",
-        "./commands/scan.md",
-        "./commands/fix.md",
-        "./commands/audit.md",
-        "./commands/test.md",
-        "./commands/loop.md",
-        "./commands/status.md",
-        "./commands/stop.md",
-        "./commands/resume.md",
-        "./commands/report.md",
-        "./commands/deploy.md"
-      ],
-      "hooks": "./hooks/hooks.json",
-      "agents": [
-        "./agents/architect.md",
-        "./agents/investigator.md",
-        "./agents/repair-engineer.md",
-        "./agents/qa-engineer.md",
-        "./agents/security-auditor.md",
-        "./agents/final-reviewer.md"
-      ],
-      "skills": [
-        "./skills/repository-intelligence",
-        "./skills/autonomous-debugging",
-        "./skills/code-repair",
-        "./skills/regression-testing",
-        "./skills/security-auditing",
-        "./skills/deployment-verification"
-      ],
-      "permissions": {
-        "modes": ["SAFE", "AUTO", "SANDBOX"],
-        "default": "AUTO"
+      "author": {
+        "name": "dr-rohan-shaik"
       },
-      "configuration": {
-        "maxIterations": 10,
-        "maxRuntimeMinutes": 60,
-        "executionBudget": 1000,
-        "autoGitPush": false,
-        "autoDeploy": false,
-        "deploymentTargets": []
+      "category": "engineering",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/dr-rohan-shaik/phantom-engine.git",
+        "path": ".",
+        "ref": "master"
       },
-      "minClaudeCodeVersion": "1.0.0",
-      "keywords": [
-        "autonomous",
-        "engineering",
-        "debugging",
-        "testing",
-        "security",
-        "deployment",
-        "loop"
-      ]
+      "homepage": "https://github.com/dr-rohan-shaik/phantom-engine"
     }
   ]
 }
